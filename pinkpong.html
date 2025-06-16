@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Pong - Enhanced 2 Player Game</title>
+    <link rel="stylesheet" href="pinkpong.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="sound-controls">
+            <button class="sound-btn" id="soundToggle" title="Toggle Sound">🔊</button>
+        </div>
+        
+        <div class="fps-counter" id="fpsCounter">FPS: 60</div>
+        
+        <div class="game-title">PINK PONG</div>
+        
+        <div class="game-ui">
+            <div class="player-info">
+                <div class="player-name">Player 1</div>
+                <div class="score" id="player1Score">0</div>
+                <div class="controls">W/S Keys</div>
+            </div>
+            
+            <div class="control-buttons">
+                <button class="btn" id="startBtn">START</button>
+                <button class="btn" id="pauseBtn">PAUSE</button>
+                <button class="btn" id="restartBtn">RESTART</button>
+            </div>
+            
+            <div class="player-info">
+                <div class="player-name">Player 2</div>
+                <div class="score" id="player2Score">0</div>
+                <div class="controls">↑/↓ Keys</div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        
+        <div class="game-status" id="gameStatus"></div>
+        <div class="pause-indicator" id="pauseIndicator">PAUSED</div>
+        
+        <div class="game-instructions">
+            Player 1: W/S to move • Player 2: ↑/↓ to move • SPACE to pause • First to 7 points wins!
+        </div>
+    </div>
+
+    <script src="pinkpong.js"></script>
+</body>
+</html>
